@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from "react-router-dom"
 
 function TopArtists() {
     const [userTopArtists, setUserTopArtists] = useState();    
 
     useEffect(() => {
-        fetch("http://localhost:8000/api/user-top-artists")
+        fetch("http://localhost:8080/api/user-top-artists")
         .then(res => res.json())
         .then(data => {
             console.log(data);
@@ -22,8 +23,9 @@ function TopArtists() {
             (
                 <h1>LOADING...</h1>
             )}
+            <Link to="/">Home</Link>
         </div>
     )
 }
 
-export default TopArtists
+export default TopArtists;
