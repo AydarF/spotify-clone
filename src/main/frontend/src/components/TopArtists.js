@@ -30,8 +30,12 @@ function TopArtists() {
                                 srcSet={artist.images[0].url}
                                 alt={artist.name} loading="lazy" />                                                
                             <ImageListItemBar
-                                sx={{textAlign: "center", marginTop: "-6px", backgroundColor: "white", color: "black", borderBottomRightRadius: "0.25rem", borderBottomLeftRadius: "0.25rem"}}
-                                title={artist.name}            
+                                className="imageListItemBar"
+                                title={artist.name}
+                                subtitle={
+                                <>
+                                    <h3 className="subtitle">Genre: {artist.genres[0]}</h3>
+                                </>}            
                                 position="below"
                             />
                         </ImageListItem> 

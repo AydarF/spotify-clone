@@ -15,3 +15,22 @@
     border-top-right-radius: 0.25rem;
     border-top-left-radius: 0.25rem;
 }
+
+.topArtists .subtitle {
+    font-weight: 100;
+    padding: 10px;
+}
+
+.topArtists .imageListItemBar {
+    text-align: center;
+    margin-top: -6px; 
+    background-color: white;
+    color: black;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+/* The wrapper around title and subtitle of the image */
+.topArtists .css-186gwnw-MuiImageListItemBar-titleWrap {
+    padding: 7px 0 7px;
+}
