@@ -1,0 +1,17 @@
+.topArtists {
+    padding: 2rem 3rem;
+}
+
+.topArtists ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1rem));
+    justify-content: center;
+    justify-items: center;
+    grid-gap: 4rem;
+}
+
+.topArtists img {
+    max-width: 180px;
+    border-top-right-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
