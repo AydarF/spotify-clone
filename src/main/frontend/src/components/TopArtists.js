@@ -19,7 +19,7 @@ function TopArtists() {
     }, [])
 
     return (
-        <div className="topArtists">
+        <div className="main">
             <ul>
             { userTopArtists ? (
                 userTopArtists.map((artist) => {
