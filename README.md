@@ -1,2 +1,2 @@
 # spotify-clone
-A Spotify clone built with Spring Boot and React
+A Spotify clone built with Spring Boot, React and Material UI
