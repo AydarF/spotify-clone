@@ -24,7 +24,9 @@ function TopArtists() {
             { userTopArtists ? (
                 userTopArtists.map((artist) => {
                     return (                        
-                        <ImageListItem key={artist.name}>
+                        <ImageListItem 
+                            key={artist.name}
+                            className="imageListItem">                            
                             <img  
                                 src={artist.images[0].url} 
                                 srcSet={artist.images[0].url}
