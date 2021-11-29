@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
+import Header from './Header'
 import './TopArtists.css'
 import './TopSongs.css'
 
@@ -19,6 +19,8 @@ function TopSongs() {
     }, [])
 
     return (
+        <>
+        <Header componentPath="/top-artists" componentName="Top Artists" />
         <div className="main">
             <ul>
                 {userTopSongs ? (
@@ -46,9 +48,9 @@ function TopSongs() {
                 ) : (
                     <h1>Loading...</h1>
                 )}
-                    <Link to="/">Home</Link>
                 </ul>
         </div>
+        </>
     )
 }
 
