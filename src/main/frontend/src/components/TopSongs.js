@@ -3,6 +3,7 @@ import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
 import Header from './Header'
 import Box from '@mui/material/Box'
+import ScrollArrow from './ScrollArrow'
 import './TopArtists.css'
 import './TopSongs.css'
 
@@ -51,7 +52,8 @@ function TopSongs() {
                         <h1>Loading...</h1>
                     </Box>
                 )}
-                </ul>                
+                </ul>
+                <ScrollArrow />
         </div>
         </>
     )
