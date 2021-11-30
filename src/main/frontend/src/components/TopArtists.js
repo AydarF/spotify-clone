@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react'
-import { Link } from "react-router-dom"
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
 import Header from './Header'
+import Box from '@mui/material/Box'
 import './TopArtists.css'
 
 
@@ -47,9 +47,11 @@ function TopArtists() {
                 })
             ):
             (
-                <h1>LOADING...</h1>
+                <Box sx={{ display: 'flex' }}>
+                    <h1>Loading...</h1>
+                </Box>
             )}
-            </ul>
+            </ul>            
         </div>
         </>
     )

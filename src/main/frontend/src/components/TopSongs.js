@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
 import Header from './Header'
+import Box from '@mui/material/Box'
 import './TopArtists.css'
 import './TopSongs.css'
 
@@ -46,9 +47,11 @@ function TopSongs() {
                         )
                     })
                 ) : (
-                    <h1>Loading...</h1>
+                    <Box sx={{ display: 'flex' }}>
+                        <h1>Loading...</h1>
+                    </Box>
                 )}
-                </ul>
+                </ul>                
         </div>
         </>
     )
