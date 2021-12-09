@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    padding: 20px 0 !important;
     z-index: 999;
     box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
     background-color: #ffffff;
@@ -13,8 +14,16 @@
     display: flex;
     justify-content: space-around;
     gap: 50px;
-    padding: 35px 0 35px;
-    background-color: #ffffff;
+    padding: 35px 0;
+    z-index: 100;
+    background-color: rgba(0,0,0, 0.55);
+    transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.header-section a {
+    text-decoration: none;
+    color: #ffffff;
+    letter-spacing: 1.5rem;
 }
 
 .header-section-left {
