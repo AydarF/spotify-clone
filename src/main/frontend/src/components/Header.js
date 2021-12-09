@@ -13,14 +13,16 @@ function Header({componentPath, componentName}) {
             return () => {
                 window.removeEventListener('scroll', isSticky);
             };
-        });
+        }, []);
     
                
         /* Method that will fix header after a specific scrollable */
         const isSticky = (e) => {
             const header = document.querySelector('.header-section');
             const scrollTop = window.scrollY;
-            scrollTop >= 1 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+            if(header !== null){
+                scrollTop >= 1 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
+            }
         };
 
     return (
